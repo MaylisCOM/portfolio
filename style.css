@@ -1,0 +1,1155 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.couleurMenu {
+  color: #000;
+}
+
+h1 {
+  all: unset;
+}
+/*
+    font-family: 'Kulim Park', sans-serif;
+
+
+
+    font-family: 'Krona One', sans-serif;  
+*/
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: black;
+  height: 50px;
+  padding: 1em;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: black;
+  position: absolute;
+  height: 4px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 2px;
+}
+
+.menu-button::before {
+  content: "";
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: "";
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (min-width: 490px) {
+  .menu a {
+    color: black;
+  }
+  /* acceuil */
+
+  .body {
+    height: 96vh;
+  }
+
+  .illustrationAcceuil {
+    width: 399px;
+    height: 379;
+    margin-top: 3%;
+    margin: auto;
+    display: flex;
+  }
+
+  .iconArrow {
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    width: 9.375rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 2%;
+  }
+
+  .presentation {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .presentation p {
+    font-size: 2rem;
+    font-family: "Krona One", sans-serif;
+  }
+
+  .presentation h1 {
+    font-size: 1.5rem;
+    font-family: "Kulim Park", sans-serif;
+    margin-left: 10%;
+  }
+
+  .presentation img {
+    float: right;
+    margin-right: 3%;
+  }
+
+  /* PAGE PRESENTATION */
+  .imageQuiSuisJe {
+    width: 334px;
+    height: 290px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    margin-top: -13%;
+    display: none;
+  }
+
+  .iconQuiSuisJe {
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 35.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 30%;
+  }
+
+  .textePresentation {
+    width: 35.75rem;
+    margin-left: 30%;
+    height: 21.1rem;
+    margin-top: 1%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .textePresentation p {
+    width: 31.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+  }
+
+  .contactPresentation {
+    display: flex;
+    width: 50%;
+  }
+
+  .bordureContactPresentation {
+    width: 16.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-left: 103%;
+  }
+  .bordureContactPresentation a:visited {
+    color: white;
+  }
+
+  /* page contact */
+  .texteContact {
+    width: 22.75rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  .imagecontact {
+    width: 350px;
+    height: 328px;
+    flex-shrink: 0;
+    display: none;
+  }
+
+  .contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-bottom: 2%;
+  }
+
+  .iconcontact {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 35.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9%;
+    margin-left: 30%;
+  }
+
+  .iconsRs {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* PAGE DIPLOME */
+  .iconMesDiplomes {
+    display: none;
+  }
+  .texteDiplomeDiginamic {
+    display: none;
+  }
+
+  .texteDiplomeWis {
+    display: none;
+  }
+
+  .bordureContactDiplome {
+    display: none;
+  }
+
+  .MiseEnPage {
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin: auto;
+    height: 225px;
+    margin-top: 2%;
+    width: 63%;
+  }
+
+  .MiseEnPage2 {
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin: auto;
+    height: 262px;
+    margin-top: 1%;
+    width: 63%;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  /* Page Experience*/
+
+  .experience {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+  }
+
+  .texteExperienceDiginamic {
+    width: 22.75rem;
+    height: 33.6875rem;
+    margin-top: 0%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssDiginamic h2 {
+    width: 18.0625rem;
+    height: 4.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssDiginamic p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 127%;
+  }
+
+  .texteExperiencePandora {
+    width: 22.75rem;
+    height: 27.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssPandora h2 {
+    width: 18.0625rem;
+    height: 5.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssPandora p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    line-height: 127%;
+  }
+
+  .PF {
+    margin-top: -47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bordurePF {
+    width: 20.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+  .bordurePF a:visited {
+    color: white;
+  }
+
+  .texteExperienceMaylis {
+    width: 22.75rem;
+    height: 21.6875rem;
+
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssMaylis h2 {
+    width: 18.0625rem;
+    height: 5.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssMaylis p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-top: 11%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5%;
+  }
+
+  .bordurePFMaylis {
+    width: 20.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-top: 42%;
+    margin-left: 5%;
+  }
+  .bordurePFMaylis a:visited {
+    color: white;
+  }
+
+  /* Page portfolio */
+
+  .body {
+    height: 164vh;
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .illustrationPortfolio {
+    width: 21rem;
+    height: 21rem;
+    flex-shrink: 0;
+  }
+
+  .iconPortfolio {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 59.75rem;
+    margin-left: 17%;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 3%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PresentationPortfolio {
+    width: 22.8125rem;
+    height: 26.375rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    background: #fff;
+    margin-bottom: 0%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imageClient {
+    width: 11rem;
+    height: 22.875rem;
+    flex-shrink: 0;
+    margin: 2%;
+    margin-left: 5%;
+  }
+
+  .textePortfolio {
+    padding-left: 6%;
+    padding-right: 3%;
+  }
+
+  .imageClientmobile {
+    width: 10rem;
+    height: 25.875rem;
+    flex-shrink: 0;
+    margin: 2%;
+    margin-left: 5%;
+  }
+}
+
+/*------------------------------------*/
+
+@media screen and (max-width: 390px) {
+  /* menu */
+
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
+    height: 50px;
+    padding: 1em;
+  }
+
+  .menu-button-container {
+    display: flex;
+  }
+  .menu {
+    position: absolute;
+    top: 0%;
+    margin-top: 85px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    border: 1px solid #333;
+    height: 2.5em;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0.5em 0;
+    width: 100%;
+    color: black;
+  }
+  .menu > li:not(:last-child) {
+    border-bottom: 1px solid #444;
+  }
+
+  /* acceuil */
+
+  .illustrationAcceuil {
+    width: 377px;
+    height: 379;
+    margin-top: 25%;
+  }
+
+  .iconArrow {
+    border-radius: 0.5rem;
+    border: 1px solid #000;
+    width: 9.375rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-top: 15%;
+  }
+
+  .presentation {
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+  }
+
+  .presentation p {
+    font-size: 2rem;
+    font-family: "Krona One", sans-serif;
+  }
+
+  .presentation h1 {
+    font-size: 1.5rem;
+    font-family: "Kulim Park", sans-serif;
+  }
+
+  .presentation img {
+    float: right;
+    margin-right: 3%;
+  }
+
+  .imagePresentation {
+    display: none;
+  }
+
+  .imageMaylis {
+    display: none;
+  }
+  /* Page presentation */
+  .imageQuiSuisJe {
+    width: 334px;
+    height: 290px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    margin-top: -13%;
+  }
+
+  .iconQuiSuisJe {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 22.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4%;
+  }
+
+  .textePresentation {
+    width: 22.75rem;
+    height: 25.1rem;
+    margin-top: 1%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .textePresentation p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 2%;
+  }
+
+  .contactPresentation {
+    display: flex;
+  }
+
+  .bordureContactPresentation {
+    width: 16.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+  .bordureContactPresentation a:visited {
+    color: white;
+  }
+
+  /* page contact */
+  .texteContact {
+    width: 22.75rem;
+    height: 4rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  .imagecontact {
+    width: 350px;
+    height: 328px;
+    flex-shrink: 0;
+  }
+
+  .iconcontact {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 22.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -9%;
+  }
+
+  .iconsRs {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  /* Page Diplome */
+  .iconMesDiplomes {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 22.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .diplome {
+    margin-bottom: 10%;
+  }
+
+  .texteDiplomeDiginamic {
+    width: 22.75rem;
+    height: 19.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCss p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .texteCss h2 {
+    width: 18.0625rem;
+    height: 3.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteDiplomeWis {
+    width: 22.75rem;
+    height: 26.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssWis h2 {
+    width: 18.0625rem;
+    height: 3.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .bordureContactDiplome {
+    width: 16.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-bottom: 7%;
+  }
+  .bordureContactDiplome a:visited {
+    color: white;
+  }
+
+  .slider-container {
+    display: none;
+  }
+
+  .MiseEnPage {
+    display: none;
+  }
+
+  .MiseEnPage2 {
+    display: none;
+  }
+
+  /* Page Experience*/
+
+  .texteExperienceDiginamic {
+    width: 22.75rem;
+    height: 30.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssDiginamic h2 {
+    width: 18.0625rem;
+    height: 4.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssDiginamic p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .texteExperiencePandora {
+    width: 22.75rem;
+    height: 27.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssPandora h2 {
+    width: 18.0625rem;
+    height: 5.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssPandora p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-left: 5%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .PF {
+    margin-top: 16%;
+    margin-left: 4%;
+  }
+
+  .bordurePF {
+    width: 20.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+  }
+  .bordurePF a:visited {
+    color: white;
+  }
+
+  .texteExperienceMaylis {
+    width: 22.75rem;
+    height: 21.6875rem;
+    margin-top: 2%;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+  }
+
+  .texteCssMaylis h2 {
+    width: 18.0625rem;
+    height: 5.5625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 5%;
+    padding-bottom: 3%;
+    border-bottom: 1px solid #000;
+  }
+
+  .texteCssMaylis p {
+    width: 21.0625rem;
+    height: 8.5625rem;
+    margin-top: 11%;
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Kulim Park", sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 5%;
+  }
+
+  .bordurePFMaylis {
+    width: 20.5625rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    margin-top: 42%;
+    margin-left: 5%;
+  }
+  .bordurePFMaylis a:visited {
+    color: white;
+  }
+
+  /* Page portfolio */
+  .illustrationPortfolio {
+    width: 21rem;
+    height: 21rem;
+    flex-shrink: 0;
+  }
+
+  .iconPortfolio {
+    flex-shrink: 0;
+    color: #000;
+    font-family: "Krona One", sans-serif;
+    font-size: 1.1875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 22.75rem;
+    height: 3.1875rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .PresentationPortfolio {
+    width: 22.8125rem;
+    height: 26.375rem;
+    flex-shrink: 0;
+    border-radius: 0.5rem;
+    border: 2px solid #000;
+    background: #fff;
+    margin-bottom: 6%;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .imageClient {
+    width: 11rem;
+    height: 22.875rem;
+    flex-shrink: 0;
+    margin: 2%;
+    margin-left: 5%;
+  }
+
+  .textePortfolio {
+    padding-left: 6%;
+    padding-right: 3%;
+  }
+
+  .imageClientmobile {
+    width: 10rem;
+    height: 25.875rem;
+    flex-shrink: 0;
+    margin: 2%;
+    margin-left: 5%;
+  }
+}
