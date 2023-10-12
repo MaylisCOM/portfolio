@@ -95,8 +95,10 @@ h1 {
 
 a:link {
   text-decoration: none;
-  color: rgb(0, 0, 0); !important
+  color: rgb(0, 0, 0);
 }
+
+a:link:hover { color: #000000; };
 
 @media screen and (min-width: 450px) {
   .menu a {
