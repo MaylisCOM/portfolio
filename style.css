@@ -98,7 +98,7 @@ a:link {
   color: white;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 450px) {
   .menu a {
     color: black;
   }
@@ -1066,7 +1066,7 @@ a:link {
 
 /*------------------------------------*/
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 450px) {
   /* menu */
 
   .top-nav {
