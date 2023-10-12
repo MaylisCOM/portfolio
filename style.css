@@ -1069,7 +1069,9 @@ a:link:hover { color: #000000; };
 /*------------------------------------*/
 
 @media screen and (max-width: 450px) {
-  /* menu */
+  .menu a {
+    color: black;
+  }
 
   .top-nav {
     display: flex;
